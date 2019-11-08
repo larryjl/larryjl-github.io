@@ -1,0 +1,71 @@
+html,
+body{
+    width: 100%;
+    height: 100%;
+    text-shadow: 2px 2px 1px #000;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.background{
+    background: #343a40 url("desk.jpg") no-repeat fixed center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+a,
+a:focus,
+a:hover{
+    color: #fff;
+}
+
+.main-lead{
+    background-color: rgb(52, 58, 64, 0.8);
+}
+.btn-primary
+{
+    text-shadow: none;
+    background-color: #343a40;
+    border: .05rem solid #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:visited {
+    border: .05rem solid #fff;
+}
+
+.desk {display:none}
+@media (min-width: 992px) {
+    .desk {
+        display:block;
+        position:relative;
+        top:5rem;
+        left:0rem;
+        height: 7rem;
+        width: 7rem;
+        padding: 2rem 0.5rem;
+        background-color: rgb(52, 58, 64, 0.5);
+        border: 0.05rem solid #fff;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center;
+        font-size: 0.8rem;
+        text-shadow: none;
+        opacity:0;
+        transition: opacity 0.5s;
+    }
+    .desk:hover {
+        transition: opacity 0.5s;
+        opacity:1;
+    }
+    /* .desk p {
+        display:none;
+    }
+    .desk:hover p {
+        display:initial;
+    } */
+}
